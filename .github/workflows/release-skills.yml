@@ -1,0 +1,25 @@
+# Push a tag like v0.1.0 and every skill gets zipped and attached to the release,
+# ready to upload in Claude.ai or Cowork.
+name: Release skill ZIPs
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zip every skill
+        run: |
+          mkdir -p dist
+          for d in plugins/*/skills/*/; do
+            [ -f "$d/SKILL.md" ] || continue
+            name=$(basename "$d")
+            (cd "$(dirname "$d")" && zip -rq "$GITHUB_WORKSPACE/dist/$name.zip" "$name")
+          done
+          ls -la dist
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
