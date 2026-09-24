@@ -1,0 +1,26 @@
+{
+  "name": "operator-toolkit",
+  "owner": {
+    "name": "Paul Ogonowski",
+    "url": "https://github.com/pogonow"
+  },
+  "description": "Skills Paul Ogonowski uses to run growth and ops with AI.",
+  "plugins": [
+    {
+      "name": "research",
+      "source": "./plugins/research",
+      "description": "Consultant-style research: context first, a plan you approve, primary sources, an answer-first report with clickable citations.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Paul Ogonowski"
+      },
+      "license": "MIT",
+      "keywords": [
+        "research",
+        "competitive-analysis",
+        "strategy",
+        "gtm"
+      ]
+    }
+  ]
+}

@@ -4,7 +4,11 @@ The skills, prompts, n8n workflows and scripts I use to run growth and ops with 
 
 By Paul Ogonowski, co-founder of Conversion, a data analytics agency (12 years).
 
-> Status: the repo is being set up. The first skill, `research`, lands next.
+## Skills
+
+| Skill | What it does |
+|---|---|
+| [research](plugins/research/skills/research/) | Consultant-style research: context first, a plan you approve, primary sources, an answer-first report where every claim links to its source |
 
 ## What is in here
 
