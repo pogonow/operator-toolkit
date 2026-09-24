@@ -1,12 +1,12 @@
 {
-  "name": "research",
+  "name": "deep-research",
   "version": "0.1.0",
   "description": "Consultant-style research: gathers context, proposes a plan for your sign-off, works primary sources first, delivers an answer-first report with clickable citations and a source table.",
   "author": {
     "name": "Paul Ogonowski",
     "url": "https://github.com/pogonow"
   },
-  "homepage": "https://github.com/pogonow/operator-toolkit/tree/main/plugins/research",
+  "homepage": "https://github.com/pogonow/operator-toolkit/tree/main/plugins/deep-research",
   "repository": "https://github.com/pogonow/operator-toolkit",
   "license": "MIT",
   "keywords": [

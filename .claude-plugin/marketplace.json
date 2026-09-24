@@ -7,8 +7,8 @@
   "description": "Skills Paul Ogonowski uses to run growth and ops with AI.",
   "plugins": [
     {
-      "name": "research",
-      "source": "./plugins/research",
+      "name": "deep-research",
+      "source": "./plugins/deep-research",
       "description": "Consultant-style research: context first, a plan you approve, primary sources, an answer-first report with clickable citations.",
       "version": "0.1.0",
       "author": {

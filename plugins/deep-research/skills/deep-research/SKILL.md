@@ -1,11 +1,11 @@
 ---
-name: research
+name: deep-research
 description: Run a structured research project the way a strategy consultant or BizOps lead would. Gathers context first, proposes a research plan and waits for sign-off, works primary sources before secondary ones, then delivers a pyramid-structured report (answer first) with in-text citations, a confidence call and a source table. Use when someone asks for a deep dive, research, a competitive analysis, a market or pricing scan, a landing page or funnel teardown, a playbook for how others do X, market sizing, "what do we know about company X", "what do the experts think", "find the best authors first" or any question that needs more than a few searches and a sourced answer.
 license: MIT
 argument-hint: the question to research (one sentence is enough), optionally quick / standard / deep
 ---
 
-# Research
+# Deep Research
 
 Talk to the user in their language. The report ships in English unless the user asks for another language. Write plainly: answer first, no filler, no hedging a claim the evidence supports.
 

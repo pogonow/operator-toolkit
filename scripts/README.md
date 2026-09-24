@@ -1,3 +1,5 @@
 # Scripts
 
-Small scripts, one folder each with a README. No secrets in code: anything private is read from environment variables.
+Coming soon.
+
+Small scripts, one folder each with a README. Nothing private lives in the code, anything secret gets read from environment variables.
