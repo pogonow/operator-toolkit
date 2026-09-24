@@ -6,3 +6,8 @@ local.env
 dist/
 node_modules/
 __pycache__/
+
+# local test installs of our own skills (npx skills add in this folder), never commit
+.agents/
+.claude/
+skills-lock.json
