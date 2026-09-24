@@ -46,4 +46,4 @@ MIT. Use it, change it, ship it. A link back is always nice.
 
 ## Say hi
 
-If something here saved you an afternoon (or broke on your setup), open an issue. I read everything.
+If something here saved you an afternoon (or broke on your setup), open an issue or DM me on [LinkedIn](https://www.linkedin.com/in/pawelogonowski/). I read everything.

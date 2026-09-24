@@ -47,6 +47,10 @@ Then just ask for it ("do a deep dive on...", "what do the experts think about..
 npx skills add pogonow/operator-toolkit
 ```
 
+## Something broke?
+
+Open an [issue](https://github.com/pogonow/operator-toolkit/issues) or DM me on [LinkedIn](https://www.linkedin.com/in/pawelogonowski/). Tell me what you asked and what came back, that's usually enough for me to fix it.
+
 ## Credits
 
 The workflow follows Kyle Poyar's description of his own research skill in [Growth Unhinged](https://www.growthunhinged.com/p/claude-skills-gtm-and-pricing) and Torsten Walbaum's [Deep Research for GTM](https://www.growthunhinged.com/p/deep-research-for-gtm). The effort scaling and source-quality rules come from Anthropic's write-up on their [multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system). The report shape is Barbara Minto's pyramid.
