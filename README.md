@@ -1,5 +1,7 @@
 # Operator Toolkit
 
+[![skills.sh](https://skills.sh/b/pogonow/operator-toolkit)](https://skills.sh/pogonow/operator-toolkit)
+
 Hey, I'm [Paul](https://www.linkedin.com/in/pawelogonowski/) 👋 3x founder, 2 exits and in B2B marketing since 2008. These days I do growth and GTM for B2B SaaS. I also write [The Anti-Grind Business Manual](https://owneropsguide.substack.com), a weekly newsletter about running ops in a B2B business without grinding yourself into the ground.
 
 This repo is where I put the stuff I actually use: Claude skills, prompts, n8n workflows and small scripts. Everything in here ran on my own work first (my research, my newsletter, my pipeline) before it got a README, so it's probably more opinionated than it should be. Take what helps and bend the rest to your setup.
