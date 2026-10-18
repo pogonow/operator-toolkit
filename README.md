@@ -6,13 +6,13 @@ Hey, I'm [Paul](https://www.linkedin.com/in/pawelogonowski/) 👋 3x founder and
 
 This repo is where I put the stuff I actually use: Claude skills, prompts, n8n workflows and small scripts. Everything in here ran on my own work first (my research, my newsletter, my pipeline) before it got a README, so it's probably more opinionated than it should be. Take what helps and bend the rest to your setup.
 
-To be straight about where it is: the repo is brand new and there's one skill in here right now. More is coming as I clean things up enough to share them (the slow part is ripping my own name and context out of every file, I apparently hardcode myself everywhere).
+To be straight about where it is: the repo is brand new and there are two skills in here right now. More is coming as I clean things up enough to share them (the slow part is ripping my own name and context out of every file, I apparently hardcode myself everywhere).
 
 ## What's in here
 
 | Folder | What goes there | Status |
 |---|---|---|
-| [`plugins/`](plugins/) | Skills in the open [Agent Skills](https://agentskills.io) format. They work in Claude, Claude Code and Cowork and in most other agents that read `SKILL.md` | 1 skill |
+| [`plugins/`](plugins/) | Skills in the open [Agent Skills](https://agentskills.io) format. They work in Claude, Claude Code and Cowork and in most other agents that read `SKILL.md` | 2 skills |
 | [`prompts/`](prompts/) | Prompts you paste into any chat | Coming soon |
 | [`n8n/`](n8n/) | Importable n8n workflows | Coming soon |
 | [`scripts/`](scripts/) | Small scripts that glue the rest together | Coming soon |
@@ -22,6 +22,7 @@ To be straight about where it is: the repo is brand new and there's one skill in
 | Skill | What it does |
 |---|---|
 | [deep-research](plugins/deep-research/skills/deep-research/) | Research done the way a strategy consultant would do it. Context first, a plan you sign off, primary sources first and a report that opens with the answer, with every claim linked to the page it came from |
+| [founders-brief](plugins/founders-brief/skills/founders-brief/) | The onboarding your AI never got. It researches your SaaS, interviews you about ARR, ACV, ICP, positioning, competitors, GTM motions and channels and writes one private brief your AI reads before every answer about your company |
 
 ## Install a skill
 
@@ -30,6 +31,7 @@ To be straight about where it is: the repo is brand new and there's one skill in
 ```
 /plugin marketplace add pogonow/operator-toolkit
 /plugin install deep-research@operator-toolkit
+/plugin install founders-brief@operator-toolkit
 ```
 
 **Claude.ai and Cowork:** grab the skill's ZIP from [Releases](../../releases) and upload it under Skills in Claude's settings.

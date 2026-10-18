@@ -21,6 +21,23 @@
         "strategy",
         "gtm"
       ]
+    },
+    {
+      "name": "founders-brief",
+      "source": "./plugins/founders-brief",
+      "description": "The onboarding your AI never got: interviews a B2B SaaS founder and writes one private brief every AI answer starts from.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Paul Ogonowski"
+      },
+      "license": "MIT",
+      "keywords": [
+        "saas",
+        "context",
+        "onboarding",
+        "gtm",
+        "positioning"
+      ]
     }
   ]
 }

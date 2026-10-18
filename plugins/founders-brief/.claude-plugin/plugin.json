@@ -1,0 +1,13 @@
+{
+  "name": "founders-brief",
+  "version": "0.1.0",
+  "description": "Interviews a B2B SaaS founder (ARR range, ACV, ICP, positioning, competitors, GTM motions and channels, experiments) and writes one private brief the founder's AI reads before every answer about the company.",
+  "author": {
+    "name": "Paul Ogonowski",
+    "url": "https://github.com/pogonow"
+  },
+  "homepage": "https://github.com/pogonow/operator-toolkit/tree/main/plugins/founders-brief",
+  "repository": "https://github.com/pogonow/operator-toolkit",
+  "license": "MIT",
+  "keywords": ["saas", "context", "onboarding", "gtm", "positioning", "founders"]
+}
