@@ -1,0 +1,186 @@
+{
+  "product": {
+    "name": "[Product]",
+    "aliases": [
+      "[product.com]"
+    ],
+    "domain": "[product.com]"
+  },
+  "category": "[category]",
+  "pricing": "[pricing page URL, or: hidden]",
+  "competitors": [
+    {
+      "name": "[Competitor 1]",
+      "aliases": [],
+      "domain": "[competitor1.com]"
+    },
+    {
+      "name": "[Competitor 2]",
+      "aliases": [],
+      "domain": "[competitor2.com]"
+    },
+    {
+      "name": "[Competitor 3]",
+      "aliases": [],
+      "domain": "[competitor3.com]"
+    }
+  ],
+  "other_brands": [
+    {
+      "name": "[Brand the answers name that you don't track]",
+      "aliases": [],
+      "domain": "[brand.com]"
+    }
+  ],
+  "source_types": {
+    "[domain.com]": "[type the founder gave it, e.g. publisher]"
+  },
+  "niches": [
+    "[niche 1]",
+    "[niche 2]",
+    "[niche 3]"
+  ],
+  "prompt_sources": {
+    "signup_form_field": "[yes | no | added on YYYY-MM-DD]",
+    "used": [
+      "[signup form]",
+      "[sales calls]",
+      "[support tickets]",
+      "[proposed]"
+    ]
+  },
+  "run_route": "[api | no-key | paste-all]",
+  "engines": [
+    "chatgpt",
+    "gemini",
+    "ai_overviews"
+  ],
+  "openrouter_models": {
+    "chatgpt": [
+      "openai/gpt-chat-latest",
+      "openai/gpt-5.5"
+    ],
+    "gemini": "google/gemini-3.8-flash"
+  },
+  "openrouter_models_weekly": {
+    "chatgpt": [
+      "openai/gpt-6-luna",
+      "openai/gpt-chat-latest"
+    ]
+  },
+  "openrouter_params": {
+    "gemini": {
+      "reasoning": {
+        "effort": "low"
+      }
+    }
+  },
+  "prompt_count": 20,
+  "runs_weekly": 2,
+  "runs_full": 3,
+  "runs_branded_full": 2,
+  "full_every_days": 28,
+  "first_run": "[full | test]",
+  "serpapi": {
+    "gl": "us",
+    "hl": "en",
+    "google_domain": "google.com",
+    "location": ""
+  },
+  "aio_replace_after_weeks": 3,
+  "autocomplete_seeds": [
+    "[a phrase from a sales call, as a buyer would google it]"
+  ],
+  "prompts": [
+    {
+      "id": "P1",
+      "intent": "discovery",
+      "branded": false,
+      "niche": "[niche 1]",
+      "source": "[signup form]",
+      "text": "We're a [size] [type of company] using [tool]. What's the best [category] for [job]?"
+    },
+    {
+      "id": "P2",
+      "intent": "discovery",
+      "branded": false,
+      "niche": "[niche 2]",
+      "source": "[sales call]",
+      "text": "I run [type of company] with [size] people and [pain in the buyer's words]. What should we use for [job]?"
+    },
+    {
+      "id": "P3",
+      "intent": "comparison",
+      "branded": false,
+      "niche": "",
+      "source": "[sales call]",
+      "text": "We're moving off [Competitor 1] because [reason]. What should we switch to?"
+    },
+    {
+      "id": "P4",
+      "intent": "comparison",
+      "branded": true,
+      "niche": "",
+      "source": "[proposed]",
+      "text": "Compare [Product] and [Competitor 2]. Which one is better for a team like ours, [size] people doing [job]?"
+    },
+    {
+      "id": "P5",
+      "intent": "validation",
+      "branded": true,
+      "niche": "[niche 1]",
+      "source": "[support ticket]",
+      "text": "Is [Product] worth it for a [niche 1] company? How much does it cost?"
+    }
+  ],
+  "google_queries": [
+    {
+      "id": "G1",
+      "intent": "discovery",
+      "branded": false,
+      "niche": "[niche 1]",
+      "source": "autocomplete",
+      "text": "[category] for [niche 1]"
+    },
+    {
+      "id": "G2",
+      "intent": "discovery",
+      "branded": false,
+      "niche": "",
+      "source": "autocomplete",
+      "text": "best [category]"
+    },
+    {
+      "id": "G3",
+      "intent": "comparison",
+      "branded": false,
+      "niche": "",
+      "source": "autocomplete",
+      "text": "[Competitor 1] alternatives"
+    },
+    {
+      "id": "G4",
+      "intent": "comparison",
+      "branded": false,
+      "niche": "",
+      "source": "your words",
+      "text": "[Competitor 2] vs [Competitor 3]"
+    },
+    {
+      "id": "G5",
+      "intent": "pricing",
+      "branded": false,
+      "niche": "",
+      "source": "autocomplete",
+      "text": "[category] pricing"
+    },
+    {
+      "id": "G6",
+      "intent": "pricing",
+      "branded": true,
+      "niche": "",
+      "source": "autocomplete",
+      "text": "[Product] pricing"
+    }
+  ]
+}

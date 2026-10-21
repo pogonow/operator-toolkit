@@ -38,6 +38,23 @@
         "gtm",
         "positioning"
       ]
+    },
+    {
+      "name": "ai-shortlist-check",
+      "source": "./plugins/ai-shortlist-check",
+      "description": "Weekly check of whether ChatGPT, Gemini and Google's AI Overviews recommend your SaaS, with share of voice, who gets named instead, up to five fixes and a trend report. About $7-19 a month in API costs.",
+      "version": "0.4.0",
+      "author": {
+        "name": "Paul Ogonowski"
+      },
+      "license": "MIT",
+      "keywords": [
+        "aeo",
+        "ai-search",
+        "chatgpt",
+        "share-of-voice",
+        "saas"
+      ]
     }
   ]
 }

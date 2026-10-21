@@ -1,5 +1,9 @@
 # Prompts
 
-Coming soon.
+Standalone prompts, one file each, ready to paste into any chat. Each one says what it's for and what you fill in.
 
-Standalone prompts, one file each, ready to paste into any chat. Each one will say what it's for and what you fill in. The first few are sitting in my private repo waiting for me to strip my own context out of them. Soon (ish).
+| Prompt | What it does |
+|---|---|
+| [how-did-you-hear-about-us-sorter](how-did-you-hear-about-us-sorter.md) | Sorts free-text "How did you hear about us?" answers into channels and tells you what share came from ChatGPT and other AI tools |
+
+More are coming as I strip my own context out of them.
