@@ -41,7 +41,7 @@ To be straight about where it is: the repo is brand new and there are three skil
 /plugin install ai-shortlist-check@operator-toolkit
 ```
 
-**Claude.ai and Cowork:** grab the skill's ZIP from [Releases](../../releases) and upload it under Skills in Claude's settings.
+**Claude.ai and Cowork:** grab the skill's ZIP from [`downloads/`](downloads/) and upload it under Skills in Claude's settings.
 
 **Other agents** (Codex, Cursor, Copilot, Gemini CLI and a bunch more):
 

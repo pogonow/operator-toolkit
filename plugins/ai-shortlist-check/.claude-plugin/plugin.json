@@ -1,6 +1,6 @@
 {
   "name": "ai-shortlist-check",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Weekly check of whether ChatGPT, Gemini and Google's AI Overviews recommend your SaaS: share of voice next to three competitors, the brands and pages named instead, up to five fixes a week and an HTML report with trends. About $7-19 a month in API costs, measured and explained at setup.",
   "author": {
     "name": "Paul Ogonowski",

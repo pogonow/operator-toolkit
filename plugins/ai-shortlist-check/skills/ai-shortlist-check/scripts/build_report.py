@@ -377,7 +377,8 @@ TREND_JS = r"""
    const x=i=>L+(pts.length<2?iw/2:i*iw/(pts.length-1)), y=v=>Tp+ih-(v/100)*ih;
    let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${label} share of voice">`;
    [0,25,50,75,100].forEach(v=>{svg+=`<line x1="${L}" x2="${L+iw}" y1="${y(v)}" y2="${y(v)}" stroke="${css('--rule')}"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" font-size="10" fill="${css('--soft')}">${v}</text>`});
-   pts.forEach((p,i)=>{svg+=`<text x="${x(i)}" y="${H-8}" text-anchor="middle" font-size="10" fill="${css('--soft')}">${g==='month'?p.k:p.k.slice(5)}</text>`});
+   const step=Math.ceil(pts.length/5);
+   pts.forEach((p,i)=>{if(i%step && i!==pts.length-1) return; if(i!==pts.length-1 && pts.length-1-i<step) return; svg+=`<text x="${x(i)}" y="${H-8}" text-anchor="middle" font-size="10" fill="${css('--soft')}">${g==='month'?p.k:p.k.slice(5)}</text>`});
    const labels=[];
    T.brands.forEach((br,bi)=>{
     const you=br===T.you, col=you?css('--accent'):T.greys[(bi+2)%3];

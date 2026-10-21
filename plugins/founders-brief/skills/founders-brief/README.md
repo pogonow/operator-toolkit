@@ -25,7 +25,7 @@ It also has an add mode (one to three lines after a miss) and a ten-minute month
 
 Then say "build my brief".
 
-**Claude.ai and Cowork:** download the ZIP from [the post that comes with it](https://owneropsguide.substack.com/p/owners-brief-skill) and upload it under Skills in Claude's settings. Works on every plan, Free included.
+**Claude.ai and Cowork:** download [`founders-brief.zip`](https://github.com/pogonow/operator-toolkit/raw/main/downloads/founders-brief.zip) and upload it under Skills in Claude's settings. Works on every plan, Free included.
 
 **ChatGPT, Gemini and other agents:** paste the whole `SKILL.md` into the chat or the project instructions and say "build my brief". Or:
 

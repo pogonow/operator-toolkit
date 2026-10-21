@@ -39,7 +39,7 @@ It asks you which route at the start, you don't have to remember it.
 
 Then just ask for it ("do a deep dive on...", "what do the experts think about...") or call `/deep-research:deep-research`.
 
-**Claude.ai and Cowork:** download `deep-research.zip` from [Releases](https://github.com/pogonow/operator-toolkit/releases) and upload it under Skills in Claude's settings.
+**Claude.ai and Cowork:** download [`deep-research.zip`](https://github.com/pogonow/operator-toolkit/raw/main/downloads/deep-research.zip) and upload it under Skills in Claude's settings.
 
 **Other agents** (Codex, Cursor, Copilot, Gemini CLI and more):
 
