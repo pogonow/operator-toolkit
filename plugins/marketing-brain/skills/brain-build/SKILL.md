@@ -100,7 +100,7 @@ Say this to the founder, in your own words:
 
 1. In your company Claude Project, connect GitHub (or add the repo files to the project knowledge if you're not using GitHub yet). Paste the project instructions from the top of the `CLAUDE.md` in your repo into the project's instructions field. A Project reads the repo but can't write to it, so changes made from a Project come out as "Proposed change" blocks you paste on github.com (CLAUDE.md explains how). Claude Code or Cowork with git can open the pull requests directly.
 2. When your marketer starts, run **brain-handoff** and ask: "My marketer starts Monday, what do I do?"
-3. Two weeks later, run **brain-digest** setup to get the daily digest into Slack.
+3. Two weeks later, run **brain-digest** setup to get the daily digest and the automatic Monday sweep into Slack. Until then, Claude already flags new brain material at the end of its answers (`🧠 Brain update`), so nothing gets lost in the meantime.
 
 ## How changes land
 

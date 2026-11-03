@@ -1,0 +1,76 @@
+# Weekly brain sweep: every Monday Claude Code goes through the week's brain material in this repo,
+# opens one "What's missing" pull request and Brain Bot posts the summary to Slack.
+#
+# Runs on your Claude subscription, not a paid API key:
+#   1. On your computer, with Claude Code installed, run:  claude setup-token
+#   2. Copy the token (starts with sk-ant-oat01-). It's a secret: never paste it into a chat, a file or the repo.
+#   3. In this repo: Settings > Secrets and variables > Actions > New repository secret
+#      CLAUDE_CODE_OAUTH_TOKEN = the token. SLACK_WEBHOOK_URL should already be there from the digest setup.
+#   4. Settings > Actions > General > Workflow permissions: "Read and write permissions" and
+#      "Allow GitHub Actions to create and approve pull requests".
+# Change the cron line to move the day or time (UTC). "Run workflow" on the Actions tab runs it now.
+name: Brain weekly sweep
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # Mondays 07:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          claude_args: '--allowedTools "Read,Write,Edit,Glob,Grep,Bash(git:*),Bash(gh:*),Bash(date:*),Bash(ls:*)"'
+          prompt: |
+            You are the weekly sweep for this marketing brain repo. Read CLAUDE.md and brain.yml first and follow their rules.
+            Window: the last 7 days. Never invent anything: every proposal must point to a file, a commit, a PR or a chat block that says it.
+
+            1. inbox/: turn every file in inbox/ (except README.md) into a change in the right folder. Delete the inbox file in the same change.
+            2. Open pull requests older than 7 days with no decision: list them.
+            3. open-questions.md: list questions older than 7 days.
+            4. Gaps: list files still holding "[not given yet]" or "[recording needed]", and files whose last_verified is older than 60 days.
+            5. Commits from the last 7 days that changed one file but clearly need a matching line elsewhere (a new competitor in positioning/competitors.md with no entry in experiments/, a price change with no proof line): propose the matching line.
+
+            Put every change from steps 1 and 5 on one branch named sweep/YYYY-MM-DD and open ONE pull request titled "What's missing, week of YYYY-MM-DD".
+            Label each change minor or significant per the gates in CLAUDE.md. Never merge anything yourself.
+
+            Then write the file digests/sweep-YYYY-MM-DD.md on the same branch, short enough to read in two minutes:
+            # Weekly sweep, YYYY-MM-DD
+            - [n] brain updates from inbox/ turned into proposals (PR link)
+            - [n] other proposals
+            - Waiting over a week: PRs and open questions, one line each
+            - Gaps: files still empty or stale, one line each
+            ## Your 30 seconds this week
+            Open your company Claude Project and paste:
+            "Search this week's chats in this project for every '🧠 Brain update' block and anything else that belongs in the marketing brain but isn't there yet. Give me one Proposed change per file."
+            Then commit and push the branch. If nothing at all changed this week, still write the file with the "Your 30 seconds" section.
+      - name: Post the sweep to Slack
+        if: always()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          [ -z "$SLACK_WEBHOOK_URL" ] && echo "No SLACK_WEBHOOK_URL secret, skipping Slack." && exit 0
+          git fetch --all --quiet
+          f=$(git ls-tree -r --name-only $(git for-each-ref --sort=-committerdate --format='%(refname)' refs/remotes/origin/sweep | head -1) -- digests 2>/dev/null | grep 'digests/sweep-' | sort | tail -1)
+          if [ -z "$f" ]; then
+            msg="Brain weekly sweep ran but wrote no summary. Check the Actions log."
+          else
+            ref=$(git for-each-ref --sort=-committerdate --format='%(refname)' refs/remotes/origin/sweep | head -1)
+            msg=$(git show "$ref:$f")
+          fi
+          python3 - "$msg" <<'PY'
+          import json, os, sys, urllib.request
+          text = sys.argv[1]
+          if len(text) > 3800:
+              text = text[:3800] + "\n... (full summary in the repo)"
+          req = urllib.request.Request(os.environ["SLACK_WEBHOOK_URL"], data=json.dumps({"text": text}).encode(), headers={"Content-Type": "application/json"})
+          urllib.request.urlopen(req)
+          PY

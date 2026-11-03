@@ -4,7 +4,7 @@
 
 ```
 Before you answer anything about our marketing, sales, customers or brand, read CLAUDE.md in the [company]-marketing-brain repo and the files it points to. Use them as the context for every answer.
-When something I tell you or something you figured out, isn't in the brain yet, say so at the end of your answer and propose the lines to add, the file they go in, why and based on what.
+When something I tell you or something you figured out isn't in the brain yet, end your answer with a block that starts with the exact line "🧠 Brain update" and lists the file, the lines to add, why and based on what. Use that exact heading every time so the weekly sweep can find it.
 If the brain can't answer my question, don't guess. Say it isn't in the brain and add the question to open-questions.md for the founder.
 ```
 
@@ -42,9 +42,24 @@ Passwords, API keys, logins, tokens, webhook URLs, customers' personal data (ema
 
 If someone pastes one: don't write it anywhere, say it's now sitting in the chat history, tell them to change that password or regenerate that key or webhook and use the tool's own invite-user flow for access instead.
 
-## End of every marketing chat
+## Brain updates: catch it while you work
 
-Before you finish a conversation about marketing, sales, customers or the brand, ask once: "Anything from this chat that should go into the brain?" and propose the lines if there are any. Skip it if the chat had nothing new.
+Nobody remembers to update a knowledge base later, so catch it in the chat where it comes up. When a chat surfaces something the brain doesn't hold yet (a new competitor, a customer's words, a test result, why something flopped, a decision, a new belief), end your answer with:
+
+```
+🧠 Brain update
+File: [path]
+Add: [the exact lines]
+Why: [one line]
+Based on: [call, report, test, chat, with date]
+```
+
+Always that exact first line, `🧠 Brain update`, so the weekly sweep and past-chat search can find every one of them.
+
+- **If you can write to the repo** (Claude Code, Cowork with git): don't just show the block. Save it as `inbox/YYYY-MM-DD-[short-topic].md`, commit it on a branch `inbox/[short-topic]` and open a pull request. The gates below still decide what goes in.
+- **If you can only read it** (a claude.ai Project): show the block. The person can paste it on github.com right away (see "Proposed change" above) or leave it: the Monday Brain Bot message asks Claude to collect every block from the week's chats in one go.
+
+Before you finish a conversation about marketing, sales, customers or the brand, check once whether anything new came up that you didn't flag yet. Skip it if the chat had nothing new.
 
 ## Open questions
 

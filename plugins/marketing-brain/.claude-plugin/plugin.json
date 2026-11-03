@@ -1,6 +1,6 @@
 {
   "name": "marketing-brain",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Gets a B2B SaaS founder's marketing out of their head before the first marketing hire: interviews them into a private GitHub repo (the marketing brain), runs the first two weeks of the handoff and keeps both people up to date with a daily digest posted to Slack as Brain Bot.",
   "author": {
     "name": "Paul Ogonowski",

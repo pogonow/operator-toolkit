@@ -16,11 +16,13 @@ Build it anyway, just for you. Your own Claude reads the same files, so every ma
 
 **brain-handoff** runs the first two weeks. Ask "my marketer starts Monday, what do I do?" and you get a checklist from your own files: which access to grant in which tool, which files stay founder-only, when your daily talk is. Then every day it goes through your marketer's proposed changes with you (10 minutes, yes or no and why) and turns their open questions into the agenda for your 15 to 30 minute talk.
 
-**brain-digest** takes over after that. Every day (or week) a scheduled task writes what changed, who changed it, why and based on what, both ways. Minor changes go straight in, anything touching positioning, voice, pricing or a founder-only file waits for you. A GitHub Action posts each digest to Slack as Brain Bot. Once a week it also proposes what's missing: best run by hand inside your company Project ("what's missing from the brain?"), because a scheduled run usually can't see your Project chats.
+**brain-digest** takes over after that. Every day (or week) a scheduled task writes what changed, who changed it, why and based on what, both ways. Minor changes go straight in, anything touching positioning, voice, pricing or a founder-only file waits for you. A GitHub Action posts each digest to Slack as Brain Bot.
+
+**Nobody has to remember to update it.** Claude flags new brain material while you work (a `🧠 Brain update` block at the end of the answer, or a pull request straight away in Claude Code). Every Monday a GitHub Action runs Claude Code on your subscription (no API key), turns everything caught into one "What's missing" pull request and Brain Bot posts it to Slack, with a 30-second prompt that collects the blocks left in your claude.ai chats. Claude Code users can add a small Python script that sweeps their local sessions the same way.
 
 ## What it costs
 
-Nothing beyond your Claude plan. Skills and Projects work on every Claude plan, Free included, so brain-build and brain-handoff run there (the Free plan's usage limits mean the interview takes two or three sittings). The daily digest and past-chat search need a paid plan. GitHub's free plan covers the repo and the Action (2,000 minutes a month on private repos, a digest takes seconds). The free Slack plan is enough for Brain Bot.
+Nothing beyond your Claude plan. Skills and Projects work on every Claude plan, Free included, so brain-build and brain-handoff run there (the Free plan's usage limits mean the interview takes two or three sittings). The daily digest, the weekly sweep and past-chat search need a paid plan. GitHub's free plan covers the repo and the Action (2,000 minutes a month on private repos, a digest takes seconds). The free Slack plan is enough for Brain Bot.
 
 One honest limit: on a free GitHub account the "founder-only" flag is soft. Every AI reading the repo respects it because the rules file says so, but GitHub itself won't block a push. If you want a hard lock, GitHub Pro or Team plus the included `CODEOWNERS.example` does it.
 
