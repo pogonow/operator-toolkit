@@ -60,7 +60,7 @@
       "name": "marketing-brain",
       "source": "./plugins/marketing-brain",
       "description": "Gets your marketing out of your head before your first marketing hire: a private GitHub repo your marketer and their AI read on day one, a two-week handoff and a daily digest as Brain Bot in Slack.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "Paul Ogonowski"
       },

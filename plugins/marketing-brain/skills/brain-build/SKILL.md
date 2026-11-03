@@ -1,6 +1,6 @@
 ---
 name: brain-build
-description: Builds a B2B SaaS founder's marketing brain, a private GitHub repo with ten folders (customers, positioning, proof, voice, GTM motions, experiments, tools, processes, skills, brand) that a first marketing hire and every AI they use read before doing anything, by researching the company first and then interviewing the founder out loud instead of asking them to write docs. Also adds to it and refreshes it. Use when the founder says "build my marketing brain", "I'm hiring my first marketer", "get my marketing out of my head", "set up a second brain for marketing", "onboard my marketer", "my new hire keeps asking me everything" or pastes a Founder's Brief and wants to turn it into a brain.
+description: Builds a B2B SaaS founder's marketing brain, a private GitHub repo with ten folders (customers, positioning, proof, voice, GTM motions, experiments, tools, processes, skills, brand) that a first marketing hire and every AI they use read before doing anything (or that only the founder and their own AI read, before any hire), by researching the company first and then interviewing the founder out loud instead of asking them to write docs. Also adds to it and refreshes it. Use when the founder says "build my marketing brain", "I'm hiring my first marketer", "get my marketing out of my head", "set up a second brain for marketing", "onboard my marketer", "my new hire keeps asking me everything", "a marketing brain just for me", "I'm not hiring yet but want Claude to know my marketing" or pastes a Founder's Brief and wants to turn it into a brain.
 ---
 
 Last verified: 2026-11-03
@@ -14,6 +14,8 @@ Everything your first marketer needs to know is in your head right now. This ski
 It never invents a fact about your company and it never decides anything for you. It writes down what you know and labels what you don't.
 
 The two other skills in this set take over from here: **brain-handoff** runs the first two weeks with your new hire and **brain-digest** keeps both of you up to date after that.
+
+Not hiring yet? Build it anyway, just for yourself. Your own Claude reads the same files, so every marketing chat starts from them instead of from zero. The other two skills can wait until someone joins.
 
 ## Pick the mode first
 
