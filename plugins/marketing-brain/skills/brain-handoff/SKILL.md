@@ -4,7 +4,7 @@ description: Runs the first two weeks of handing a founder's marketing over to a
 ---
 
 Last verified: 2026-11-03
-Companion post: Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-before-you-hire
+Companion post: Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-saas-founders
 From The Anti-Grind SaaS Manual by Paul Ogonowski.
 
 # Hand the brain over
@@ -96,5 +96,5 @@ On switch: set `mode: digest` and `digest_started` in `brain.yml`, keep the foun
 
 ## Where this comes from
 
-- Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-before-you-hire
+- Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-saas-founders
 - What your hire should do in the first 90 days (Capland's plan): How to Market Your B2B SaaS After the $1M Founder Ceiling, https://owneropsguide.substack.com/p/how-to-market-b2b-saas-after-1m-arr

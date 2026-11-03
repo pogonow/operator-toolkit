@@ -41,7 +41,7 @@ Already built a Founder's Brief? Paste it in at the start and brain-build skips 
 
 ## Read the why
 
-[Put Your Marketing Brain on GitHub Before You Hire](https://owneropsguide.substack.com/p/marketing-brain-github-before-you-hire) has the story behind it: the cold outreach campaign a founder forgot to tell me about and why I'd pick GitHub over Notion for this.
+[Put Your Marketing Brain on GitHub Before You Hire](https://owneropsguide.substack.com/p/marketing-brain-github-saas-founders) has the story behind it: the cold outreach campaign a founder forgot to tell me about and why I'd pick GitHub over Notion for this.
 
 ## Something broke?
 

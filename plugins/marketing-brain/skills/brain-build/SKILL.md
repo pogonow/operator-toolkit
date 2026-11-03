@@ -4,7 +4,7 @@ description: Builds a B2B SaaS founder's marketing brain, a private GitHub repo 
 ---
 
 Last verified: 2026-11-03
-Companion post: Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-before-you-hire
+Companion post: Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-saas-founders
 From The Anti-Grind SaaS Manual by Paul Ogonowski.
 
 # Build your marketing brain
@@ -119,6 +119,6 @@ Every change to the brain is a proposal with a reason:
 
 ## Where this comes from
 
-- Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-before-you-hire
+- Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-saas-founders
 - The interview builds on The Founder's Brief: Why AI Gives You Generic Answers About Your SaaS (and How to Fix It), https://owneropsguide.substack.com/p/why-ai-gives-generic-answers
 - Who to hire before you build this: How to Market Your B2B SaaS After the $1M Founder Ceiling, https://owneropsguide.substack.com/p/how-to-market-b2b-saas-after-1m-arr

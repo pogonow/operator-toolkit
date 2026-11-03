@@ -4,7 +4,7 @@ description: Keeps a founder and their marketing hire up to date on the marketin
 ---
 
 Last verified: 2026-11-03
-Companion post: Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-before-you-hire
+Companion post: Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-saas-founders
 From The Anti-Grind SaaS Manual by Paul Ogonowski.
 
 # Keep the brain fresh
@@ -86,5 +86,5 @@ On the first run of each week (or when asked):
 
 ## Where this comes from
 
-- Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-before-you-hire
+- Put Your Marketing Brain on GitHub Before You Hire, https://owneropsguide.substack.com/p/marketing-brain-github-saas-founders
 - Scheduled tasks and connectors in Claude: https://code.claude.com/docs/en/web-scheduled-tasks

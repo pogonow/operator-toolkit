@@ -20,4 +20,4 @@ Everything we know about selling and marketing [product], in one place. Read by 
 
 Rules for changes: `CLAUDE.md`. Mode and people: `brain.yml`.
 
-Built with the Marketing Brain skills from The Anti-Grind SaaS Manual: https://owneropsguide.substack.com/p/marketing-brain-github-before-you-hire
+Built with the Marketing Brain skills from The Anti-Grind SaaS Manual: https://owneropsguide.substack.com/p/marketing-brain-github-saas-founders
