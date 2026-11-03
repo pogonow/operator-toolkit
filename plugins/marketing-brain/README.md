@@ -6,6 +6,10 @@ Everything your new marketer needs to know is in your head right now: who buys a
 
 You talk, Claude writes. Usually about 1 to 2 hours of talking for the first version, split over two sittings.
 
+## Not hiring yet?
+
+Build it anyway, just for you. Your own Claude reads the same files, so every marketing chat starts from your customers, your positioning and what you already tried, instead of from zero. Run brain-build on its own. brain-handoff and brain-digest can wait until someone joins.
+
 ## The three skills
 
 **brain-build** researches your company (site, pricing, reviews, your LinkedIn posts), reads what you connect (email, Notion, Basecamp, Jira, ClickUp, call transcripts) and interviews you, including every GTM motion and channel you ever tried and the ones that did nothing. It writes a repo with ten folders: customers, positioning, proof, voice (the company's and yours), GTM motions, experiments, tools and who grants access, processes, skills and brand. Never passwords, never made-up facts.
