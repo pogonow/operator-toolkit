@@ -1,4 +1,4 @@
-# The Founder's Brain
+# The Marketing Brain
 
 Get your marketing out of your head before you hire your first marketer.
 
@@ -26,12 +26,12 @@ One honest limit: on a free GitHub account the "founder-only" flag is soft. Ever
 
 ```
 /plugin marketplace add pogonow/operator-toolkit
-/plugin install founders-brain@operator-toolkit
+/plugin install marketing-brain@operator-toolkit
 ```
 
 Then say "build my marketing brain".
 
-**Claude.ai and Cowork:** download the three ZIPs from [`downloads/`](https://github.com/pogonow/operator-toolkit/tree/main/downloads) (`founders-brain-build.zip`, `founders-brain-handoff.zip`, `founders-brain-digest.zip`) and upload each one under Skills in Claude's settings. Do it inside one Claude Project for your company. Your marketer makes their own project later.
+**Claude.ai and Cowork:** download the three ZIPs from [`downloads/`](https://github.com/pogonow/operator-toolkit/tree/main/downloads) (`marketing-brain-build.zip`, `marketing-brain-handoff.zip`, `marketing-brain-digest.zip`) and upload each one under Skills in Claude's settings. Do it inside one Claude Project for your company. Your marketer makes their own project later.
 
 Already built a Founder's Brief? Paste it in at the start and brain-build skips every question it already answers.
 

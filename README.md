@@ -23,7 +23,7 @@ To be straight about where it is: the repo is brand new and there are four skill
 | [deep-research](plugins/deep-research/skills/deep-research/) | Research done the way a strategy consultant would do it. Context first, a plan you sign off, primary sources first and a report that opens with the answer, with every claim linked to the page it came from |
 | [founders-brief](plugins/founders-brief/skills/founders-brief/) | The onboarding your AI never got. It researches your SaaS, interviews you about ARR, ACV, ICP, positioning, competitors, GTM motions and channels and writes one private brief your AI reads before every answer about your company |
 | [ai-shortlist-check](plugins/ai-shortlist-check/skills/ai-shortlist-check/) | Does ChatGPT recommend your SaaS or someone else? Runs your buyers' prompts through ChatGPT, Gemini and Google's AI Overviews every week, counts your share of voice next to three competitors and hands you up to five fixes, for about $7 to $19 a month in API costs ([ZIP](downloads/Anti_Grind_SaaS_Manual_AI_Shortlist_Check.zip)) |
-| [founders-brain](plugins/founders-brain/) | Gets your marketing out of your head before your first marketing hire. Three skills: an interview that writes a private GitHub repo with ten folders (customers, positioning, proof, voice, motions, every experiment incl. the flops, tools, processes, skills, brand), a two-week handoff with your new marketer and a daily digest posted to Slack as Brain Bot ([ZIPs](downloads/)) |
+| [marketing-brain](plugins/marketing-brain/) | Gets your marketing out of your head before your first marketing hire. Three skills: an interview that writes a private GitHub repo with ten folders (customers, positioning, proof, voice, motions, every experiment incl. the flops, tools, processes, skills, brand), a two-week handoff with your new marketer and a daily digest posted to Slack as Brain Bot ([ZIPs](downloads/)) |
 
 ## Prompts
 
@@ -40,7 +40,7 @@ To be straight about where it is: the repo is brand new and there are four skill
 /plugin install deep-research@operator-toolkit
 /plugin install founders-brief@operator-toolkit
 /plugin install ai-shortlist-check@operator-toolkit
-/plugin install founders-brain@operator-toolkit
+/plugin install marketing-brain@operator-toolkit
 ```
 
 **Claude.ai and Cowork:** grab the skill's ZIP from [`downloads/`](downloads/) and upload it under Skills in Claude's settings.
