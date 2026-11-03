@@ -1,0 +1,10 @@
+mode: handoff          # handoff = first two weeks, everything through the founder. digest = after that.
+founder_name: [first name]
+founder_github: [@handle]
+marketer_role: [e.g. growth marketer]
+marketer_github: [@handle]
+handoff_started: [YYYY-MM-DD]
+daily_talk: [e.g. 09:30 CET, working days]
+digest_started: [YYYY-MM-DD]
+digest: daily          # daily or weekly
+slack: false           # set to true once the Brain Bot webhook works

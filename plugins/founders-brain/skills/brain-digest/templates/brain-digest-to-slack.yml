@@ -1,0 +1,28 @@
+# Posts every new digest file (on any branch) to Slack as Brain Bot.
+# Needs one repo secret: SLACK_WEBHOOK_URL (Settings > Secrets and variables > Actions).
+name: Brain digest to Slack
+on:
+  push:
+    paths: ["digests/*.md"]
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Post new digests
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          for f in $(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'digests/*.md'); do
+            [ "$(basename "$f")" = "README.md" ] && continue
+            python3 - "$f" <<'PY'
+          import json, os, sys, urllib.request
+          text = open(sys.argv[1], encoding="utf-8").read()
+          if len(text) > 3800:
+              text = text[:3800] + "\n... (full digest in the repo)"
+          req = urllib.request.Request(os.environ["SLACK_WEBHOOK_URL"], data=json.dumps({"text": text}).encode(), headers={"Content-Type": "application/json"})
+          urllib.request.urlopen(req)
+          PY
+          done

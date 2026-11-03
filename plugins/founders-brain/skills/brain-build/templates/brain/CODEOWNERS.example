@@ -1,0 +1,7 @@
+# Optional hard lock. Works on private repos only with GitHub Pro or Team.
+# Move and rename to .github/CODEOWNERS, then in Settings > Branches protect main with
+# "Require a pull request" and "Require review from Code Owners".
+# Note: this also blocks direct commits to main, so the digest task will open its digest as a PR.
+/positioning/        @[founder-github]
+/voice/founder.md    @[founder-github]
+/proof/pricing.md    @[founder-github]

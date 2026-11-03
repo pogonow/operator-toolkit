@@ -1,0 +1,13 @@
+{
+  "name": "founders-brain",
+  "version": "0.1.0",
+  "description": "Gets a B2B SaaS founder's marketing out of their head before the first marketing hire: interviews them into a private GitHub repo (the marketing brain), runs the first two weeks of the handoff and keeps both people up to date with a daily digest posted to Slack as Brain Bot.",
+  "author": {
+    "name": "Paul Ogonowski",
+    "url": "https://github.com/pogonow"
+  },
+  "homepage": "https://github.com/pogonow/operator-toolkit/tree/main/plugins/founders-brain",
+  "repository": "https://github.com/pogonow/operator-toolkit",
+  "license": "MIT",
+  "keywords": ["saas", "marketing", "onboarding", "handoff", "first-marketing-hire", "second-brain", "github", "founders"]
+}
