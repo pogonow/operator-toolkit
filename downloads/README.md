@@ -7,6 +7,7 @@ Ready-to-upload ZIPs of every skill in this repo, for Claude.ai and Cowork (uplo
 | deep-research | [deep-research.zip](deep-research.zip) |
 | founders-brief | [founders-brief.zip](founders-brief.zip) |
 | ai-shortlist-check | [Anti_Grind_SaaS_Manual_AI_Shortlist_Check.zip](Anti_Grind_SaaS_Manual_AI_Shortlist_Check.zip) |
+| ai-fix-list | [Anti_Grind_SaaS_Manual_AI_Fix_List.zip](Anti_Grind_SaaS_Manual_AI_Fix_List.zip) |
 | marketing-brain: brain-build | [marketing-brain-build.zip](marketing-brain-build.zip) |
 | marketing-brain: brain-handoff | [marketing-brain-handoff.zip](marketing-brain-handoff.zip) |
 | marketing-brain: brain-digest | [marketing-brain-digest.zip](marketing-brain-digest.zip) |

@@ -1,0 +1,13 @@
+{
+  "name": "ai-fix-list",
+  "version": "0.1.0",
+  "description": "Works the pages AI quotes about your SaaS that you don't own, on two tracks: fix the ones that get you wrong, earn a mention on the lists that skip you. Reads your AI Shortlist Check runs, drafts every email and follow-up into Gmail, tracks each page to live or closed and builds a weekly report. No API costs of its own.",
+  "author": {
+    "name": "Paul Ogonowski",
+    "url": "https://github.com/pogonow"
+  },
+  "homepage": "https://github.com/pogonow/operator-toolkit/tree/main/plugins/ai-fix-list",
+  "repository": "https://github.com/pogonow/operator-toolkit",
+  "license": "MIT",
+  "keywords": ["aeo", "ai-search", "chatgpt", "outreach", "brand-mentions", "saas", "gtm"]
+}

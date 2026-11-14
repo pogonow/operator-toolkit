@@ -73,6 +73,24 @@
         "second-brain",
         "github"
       ]
+    },
+    {
+      "name": "ai-fix-list",
+      "source": "./plugins/ai-fix-list",
+      "description": "Works the pages AI quotes about your SaaS that you don't own: fix the ones that get you wrong, earn a mention on the lists that skip you. Drafts every email, tracks every page, weekly report.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Paul Ogonowski"
+      },
+      "license": "MIT",
+      "keywords": [
+        "aeo",
+        "ai-search",
+        "outreach",
+        "brand-mentions",
+        "saas",
+        "gtm"
+      ]
     }
   ]
 }
